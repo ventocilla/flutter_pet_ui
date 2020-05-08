@@ -22,9 +22,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.deepOrangeAccent,
-      ),
       body: Stack(
         children: <Widget>[
           DrawerScreen(),
