@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
+// 2:35
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -22,16 +22,11 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.deepOrangeAccent,
       ),
-      body: Container(
-        child: Center(
-          child: Text(
-            'Hi Flutter',
-            style: TextStyle(
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
+      body: Stack(
+        children: <Widget>[
+          DrawerScreen(),
+          HomeScreen(),
+        ],
       ),
     );
   }
