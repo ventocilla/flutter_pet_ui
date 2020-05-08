@@ -21,9 +21,18 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepOrangeAccent,
-      )
-      ,
-      body: Container(),
+      ),
+      body: Container(
+        child: Center(
+          child: Text(
+            'Hi Flutter',
+            style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
